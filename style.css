@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #303236;
+    font-family: "Mulish", sans-serif;
+}
+
+.component-filter {
+    margin: 55px auto;
+
+    width: 468px;
+    height: 316px;
+    background-color: #3d3f43;
+    border-radius: 15px;
+    padding-top: 40px;
+    padding-left: 45px;
+}
+li {
+    display: flex;
+    width: 378px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.list-2 {
+    margin-bottom: 40px;
+}
+.key {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding-right: 30px;
+    width: 91px;
+    height: 50px;
+    line-height: 50px;
+}
+
+select,
+input {
+    width: 287px;
+    height: 50px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #303236;
+    border: none;
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    width: 51;
+    height: 20px;
+    margin-top: 40px;
+    margin-right: 174px;
+}
+button {
+    width: 153px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 25px;
+    background: linear-gradient(to right, #31a5d9, #1e96a0);
+    border: none;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+select {
+    background: url(./arrow-down.svg) no-repeat right #303236;
+    -webkit-appearance: none;
+    background-position-x: 243px;
+}
+
+.filter-button {
+    border-top: 1px solid #303236;
+}
