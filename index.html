@@ -2,42 +2,55 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Title</title>
-	<link rel="stylesheet" href="css/app.min.css">
-	<link rel="stylesheet" href="./style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="./icons.png" type="image/x-icon">
+    <title>Calculator</title>
+
 </head>
 
 <body>
+    <div class="main">
+        <table>
+            <tr>
+                <th colspan="5" class="btn-screen screen"><span class="blink-me">0</span></th>
 
-	<div class="component-filter">
-		<form action="">
-			<ul>
-				<li class="list-1">
-					<div class="key">Country</div>
-					<div class="value">
-						<select name="" id="">
-							<option value="Norway">Norway</option>
-							<option value="Turkey">Turkey</option>
-						</select>
-					</div>
-				</li>
-				<li class="list-2">
-					<div class="key">City</div>
-					<div class="value">
-						<input type="text" value="Bergen">
-					</div>
-				</li>
-				<li class="filter-button">
-					<a href="#">Cancel</a>
-					<button type="submit">Apply Filters</button>
-				</li>
-			</ul>
+            </tr>
+            <tr>
+                <td class="btn btn-num">1</td>
+                <td class="btn btn-num">2</td>
+                <td class="btn btn-num">3</td>
+                <td class="btn btn-op">/</td>
+                <td class="btn btn-clear" style="color:#58A6F0;">CE</td>
+            </tr>
+            <tr>
+                <td class="btn btn-num">4</td>
+                <td class="btn btn-num">5</td>
+                <td class="btn btn-num">6</td>
+                <td class="btn btn-op">*</td>
+                <td class="btn btn-backspace">
+                    < </td>
+            </tr>
+            <tr>
+                <td class="btn btn-num">7</td>
+                <td class="btn btn-num">8</td>
+                <td class="btn btn-num">9</td>
+                <td class="btn btn-op">-</td>
+                <td class="btn btn-dot">.</td>
+            </tr>
+            <tr>
+                <td class="btn btn-num" colspan="2">0</td>
+                <td class="btn btn-equal">=</td>
+                <td class="btn btn-op">+</td>
+                <td class="btn btn-bracket">( )</td>
+            </tr>
 
-		</form>
-	</div>
+        </table>
+    </div>
 
+    <script src="main.js"></script>
 </body>
 
 </html>
