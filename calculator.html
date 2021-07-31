@@ -15,7 +15,7 @@
     <div class="container">
         <div class="inner-container">
             <div class="info">
-                <h1>Gündə nə qədər kalori yandırdığınızı öyrənin</h1>
+                <h1>Gündəlik kalori ehtiyacınızı öyrənin</h1>
                 <span>Bu kalkulyatorun maksimum 3% xəta payı var .İdman salonunlarındakı ölçü cihazlarında isə 8% xəta
                     payı
                     var.
@@ -43,7 +43,7 @@
                     <input type="number" id="weight" placeholder="65">
                 </div>
                 <div class="sub-header">
-                    <h5>Aktivlik dərəcən</h5>
+                    <h5>Aktivlik dərəcəniz</h5>
                 </div>
                 <div class="activity-rate">
                     <input type="radio" id="sedentary" name="amr">
@@ -66,13 +66,15 @@
                     <label for="very">Çox hərkətli (həftədə 6-7 gün ağır məşq)</label>
                 </div>
                 <div class="result">
-                    <h4>Yağ faizi</h4>
-                    <input type="text" id="result" readonly placeholder="%">
+                    <h4>Kalori ehtiyacınız</h4>
+                    <input type="text" id="result" readonly placeholder="0">
                 </div>
 
             </div>
         </div>
     </div>
+    <script type="text/javascript" async id="bmr-calculator" data-type="verywell-tool" data-vertical="verywellfit" src="https://www.verywellfit.com/static/4.233.0/components/tools/calculators/iframe-embed/embed.min.js?id=bmr-calculator"></script>
+
     <script src="./calculator.js"></script>
 </body>
 
