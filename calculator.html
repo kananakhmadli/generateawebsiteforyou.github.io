@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calculator.css">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <title>Kalkulyator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="inner-container">
+            <div class="info">
+                <h1>Gündə nə qədər kalori yandırdığınızı öyrənin</h1>
+                <span>Bu kalkulyatorun maksimum 3% xəta payı var .İdman salonunlarındakı ölçü cihazlarında isə 8% xəta
+                    payı
+                    var.
+                </span>
+            </div>
+            <div class="cal">
+                <div class="gender">
+                    <div>
+                        <label for="male">Kişi</label>
+                        <input type="radio" id="male" name="gender" checked value="male">
+                    </div>
+                    <div>
+                        <label for="female">Qadın</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                    </div>
+                </div>
+                <div class="about-you">
+                    <label for="age">Yaş</label>
+                    <input type="number" id="age" placeholder="18" autofocus>
+
+                    <label for="height">Boy</label>
+                    <input type="number" id="height" placeholder="175">
+
+                    <label for="weight">Çəki</label>
+                    <input type="number" id="weight" placeholder="65">
+                </div>
+                <div class="sub-header">
+                    <h5>Aktivlik dərəcən</h5>
+                </div>
+                <div class="activity-rate">
+                    <input type="radio" id="sedentary" name="amr">
+                    <label for="sedentary">Hərkətsiz</label>
+                </div>
+                <div class="activity-rate">
+                    <input type="radio" id="lightly" name="amr" checked>
+                    <label for="lightly">Bir az hərkətli</label>
+                </div>
+                <div class="activity-rate">
+                    <input type="radio" id="moderately" name="amr">
+                    <label for="moderately">Orata hərəkətli (həftədə 3-4 gün məşq)</label>
+                </div>
+                <div class="activity-rate">
+                    <input type="radio" id="active" name="amr">
+                    <label for="active">Aktiv hərəkətli (həftədə 6-7 gün məşq)</label>
+                </div>
+                <div class="activity-rate">
+                    <input type="radio" id="very" name="amr">
+                    <label for="very">Çox hərkətli (həftədə 6-7 gün ağır məşq)</label>
+                </div>
+                <div class="result">
+                    <h4>Yağ faizi</h4>
+                    <input type="text" id="result" readonly placeholder="%">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./calculator.js"></script>
+</body>
+
+</html>

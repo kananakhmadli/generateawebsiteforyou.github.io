@@ -1,43 +1,133 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap');
+/*FF8B00*/
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans:300,800');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap");
+
 * {
-    box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 body {
-    background-color: #EBEEF2;
-    color: #f3ffff;
+    background-color: #222;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: 'Merriweather Sans', sans-serif;
+    /* font-family: "Mulish", sans-serif; */
+}
+div.nav {
+    height: 4.5rem;
     width: 100%;
-    font-family: 'Mulish', sans-serif;
+    background-color: #333 !important;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 3px 3px 6px #ff8b00;
 }
-table {
-    background-color: #3a4655;
-    margin: 130px auto;
-    box-shadow: 2px 2px 19px #8693A4;
+div.a,
+div.b,
+div.c,
+div.d {
+    color: white;
+    margin-right: 60px;
+    font-size: 17px;
+    letter-spacing: 0.7px;
 }
-.btn {
-    height: 60px;
-    width: 60px;
-    background-color: #404d5e;
-    cursor: pointer;
+div.a:hover,
+div.b:hover,
+div.c:hover,
+div.d:hover {
+    color: red;
+    margin-right: 60px;
+}
+div h1 {
+    color: #ff8b00;
     text-align: center;
-    font-weight: 900;
-    transition: all 0.2s ease-in-out;
-    border-radius: 5px;
+    margin-top: 6rem;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+section p {
+    padding: 2rem;
+    color: white;
+    line-height: 2;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    letter-spacing: 1px;
+}
+section h2 {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    color: rgb(235, 36, 36);
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.6rem;
+}
+section ol {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+section ol li {
+    line-height: 2;
+    font-size: 1.5rem;
+}
+section ol span {
+    line-height: 0.8;
+    font-size: 1.2rem;
+}
+ol {
+    list-style: none;
+    counter-reset: li;
+}
+li::before {
+    content: counter(li);
+    color: #ff8b00;
+    display: inline-block;
+    width: 1em;
+    margin-left: 0em;
+}
+li {
+    counter-increment: li;
+}
+span.dot {
+    font-size: 50px;
+    position: relative;
+    left: -12px;
+}
+#mesq {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 60px;
 }
 
-.btn:hover {
-    background: #786dd5;
-    transform: scale(1.10);
-    color: #fff3f3;
-    border-radius: 5px;
+#mesq td,
+#mesq th {
+    /* border: 1px solid #ddd;  */
+    padding: 8px;
 }
-.screen {
-    height: 60px;
-    width: 60px;
-    cursor: text;
-    text-align: right;
-    font-size: 20px;
-    padding-right: 15px;
-    background-color: #3a4655;
+
+#mesq tr:nth-child(even) {
+    background-color: #c8c2bc;
+}
+#mesq tr:nth-child(odd) {
+    background-color: #f0eae2;
+}
+
+#mesq tr:hover {
+    background-color: rgb(177, 174, 174);
+}
+
+#mesq th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #d13b16;
+    color: white;
 }
