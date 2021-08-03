@@ -1,16 +1,171 @@
 /*FF8B00*/
-*{
+/*Proqramlar*/
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+* {
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    width: 100%;
+}
+body {
+    background-color: #222;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+}
+/* ----------------------------------------------menu------------------------------------------------ */
 
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-  
+.menu {
+    background-color: #333;
+    border-radius: 0 0 10px;
+    width: 100%;
+    /* margin: 50px auto; */
+    box-shadow:3px 3px 6px #FF8B00;
+    display: flex;
+    justify-content: space-around;
 }
-body{
-    background-color:#222;
-    font-family: 'Open Sans', sans-serif;
-  
+.menu h1{
+    color: #FF8B00;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    /* margin-right: 190px; */
+    font-size: 35px;
 }
+.menu > ul {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    padding-left: 15px;
+}
+.menu > ul > li > a {
+    display: block;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 15px;
+    border-radius: 40px;
+}
+.menu > ul > li[data-dropdown] > a::after {
+    content: "\f0d7";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 5px;
+    color: #999;
+    transition: 300ms all;
+    display: inline-block;
+}
+
+.menu ul .dropdown::before {
+    content: "";
+    border: 8px solid transparent;
+    border-bottom-color: #FF8B00;
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    margin-left: -12px;
+}
+.menu ul .dropdown .dropdown::before {
+    border-bottom-color: transparent;
+    border-right-color: #FF8B00;
+    left: 3px;
+    top: 10px;
+    margin-left: 0;
+}
+.menu > ul > li {
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.menu ul .dropdown {
+    left: 50%;
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    padding-top: 10px;
+    margin-left: -100px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms all;
+    transform: scale(0);
+}
+
+.menu ul .dropdown ul {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+.menu ul .dropdown ul li a {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 15px;
+    line-height: 34px;
+    color: #555;
+    border-radius: 34px;
+}
+.menu ul .dropdown ul li {
+    position: relative;
+    padding: 0 7px;
+}
+
+.menu ul .dropdown .dropdown {
+    position: absolute;
+    top: 0px;
+    left: 190px;
+    margin-left: 0px;
+    padding-left: 18px;
+    padding-top: 0;
+}
+
+.menu ul .dropdown ul li:hover > a {
+    background-color: white;
+    color: black;
+}
+.menu > ul > li:hover > a + .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    /* color: #FF8B00; */
+}
+.menu > ul > li:hover > a {
+    background-color: #fff;
+    color: #FF8B00;
+}
+.menu ul .dropdown li[data-dropdown]:hover > a::after {
+    transform: rotate(180deg);
+}
+
+.menu ul .dropdown ul li:hover > .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+.menu > ul > li:hover > a::after {
+    transform: rotate(180deg);
+}
+.menu ul .dropdown li[data-dropdown] > a::after {
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 15px;
+    /* color: #999; */
+    color: #FF8B00;
+    display: inline-block;
+    transition: 300ms all;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+
 div.nav{
     height:4.5rem;
     width:100%;
@@ -22,164 +177,156 @@ div.nav{
 
    
 }
-.nav a{
-    text-decoration: none;
+
+div.a,
+div.b,
+div.c,
+div.d {
     color: white;
+    margin-right: 60px;
+    font-size: 17px;
+    letter-spacing: 0.7px;
 }
- div.a, div.b, div.c, div.d{
-    color:white;
-    margin-right:60px;
-    font-size:17px;
-    letter-spacing:0.7px;
-   
-    
+div.a:hover,
+div.b:hover,
+div.c:hover,
+div.d:hover {
+    color: red;
+    margin-right: 60px;
 }
-div.a:hover, div.b:hover, div.c:hover, div.d:hover,.nav a:hover {
-    color:red;
-    
+div h1 {
+    color: #ff8b00;
+    text-align: center;
+    margin-top: 6rem;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
 }
-div h1{
-    color:#FF8B00;
-    text-align:center;
-    margin-top:6rem;
-    font-size:2.5rem;
-    letter-spacing:2px;
-    
-}
-section p{
-    padding:2rem;
-    color:white;
-    line-height:2;
-    font-family: 'Raleway', sans-serif;
-    font-size:1.2rem;
-    margin-left:2rem;
-    margin-right:2rem;
-    letter-spacing:1px;
- 
+section p {
+    padding: 2rem;
+    color: white;
+    line-height: 2;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    letter-spacing: 1px;
 }
 section h2.biro {
-    font-family: 'Raleway', sans-serif;
-    letter-spacing:1px;
-    color:rgb(235, 36, 36);
-    text-align:center;
-    margin-top:30px;
-    font-size:1.6rem;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    color: rgb(235, 36, 36);
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.8rem;
 }
 section ol {
-    font-family: 'Raleway', sans-serif;
-    letter-spacing:1px;
-    color:white;
-    margin-left:60px;
-    margin-right:60px;
-    font-size:1.2rem;
-    letter-spacing:1px;
-    margin-top:30px;
-
-    
-  
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-top: 30px;
 }
-section ol li.or{
-    line-height:2;
-    font-size:1.5rem;
-    
-
-    
-  
+section ol li.or {
+    line-height: 2;
+    font-size: 1.5rem;
 }
-section ol span{
-    line-height:0.8;
-    font-size:1.2rem;
-    
-
-    
-  
+section ol span {
+    line-height: 0.8;
+    font-size: 1.2rem;
 }
 ol {
-    list-style: none; counter-reset: li
+    list-style: none;
+    counter-reset: li;
 }
 li.or::before {
-    content: counter(li); color: #FF8B00;
-    display: inline-block; width: 1em;
+    content: counter(li);
+    color: #ff8b00;
+    display: inline-block;
+    width: 1em;
     margin-left: 0em;
-   
 }
-li.or {counter-increment: li
+li.or {
+    counter-increment: li;
 }
-span.dot{
-    font-size:50px;
-    position:relative;
-    left:-12px;
+span.dot {
+    font-size: 50px;
+    position: relative;
+    left: -12px;
 }
 #mesq {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 90%;
-    margin-left:60px;
-  }
-  
-  #mesq td, #mesq th {
-     /* border: 1px solid #ddd;  */
+    margin-left: 60px;
+}
+
+#mesq td,
+#mesq th {
+    /* border: 1px solid #ddd;  */
     padding: 8px;
-    padding-left:80px;
-  }
-  
-   #mesq tr:nth-child(even){background-color: #d6d1cb;} 
-   #mesq tr:nth-child(odd){background-color: #f0eae2;} 
-  
-  
-   #mesq tr:hover {background-color: rgb(177, 174, 174);}
-  
-  
-  #mesq th {
+    padding-left: 80px;
+}
+
+#mesq tr:nth-child(even) {
+    background-color: #d6d1cb;
+}
+#mesq tr:nth-child(odd) {
+    background-color: #f0eae2;
+}
+
+#mesq tr:hover {
+    background-color: rgb(177, 174, 174);
+}
+
+#mesq th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #db3e17;
+    background-color: #df3105;
     color: white;
-  }
-  section ul {
-    font-family: 'Raleway', sans-serif;
-    letter-spacing:1px;
-    color:white;
-    margin-left:70px;
-    margin-right:60px;
-    font-size:1.2rem;
-    letter-spacing:1px;
-    margin-top:30px;
-    line-height:2;
-
-    
-  
 }
-ul{
-    padding-left:15px;
+section ul {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 70px;
+    margin-right: 60px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    line-height: 2;
 }
-ul li{
-    padding-left:4px;
 
+section ul {
+    padding-left: 15px;
+}
+
+section ul li {
+    padding-left: 4px;
 }
 section h2.iki {
-    font-family: 'Raleway', sans-serif;
-    letter-spacing:1px;
-    color:#FF8B00;
-    text-align:left;
-    margin-top:40px;
-    margin-left:60px;
-    font-size:1.3rem;
-    font-weight:900;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    color: #ff8b00;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 60px;
+    font-size: 1.3rem;
+    font-weight: 900;
 }
 
-ul li{
-    color:#FF8B00;
+ul li {
+    color: #ff8b00;
 }
-ul span{
-    color:white;
+ul span {
+    color: white;
 }
-.div p{
-    margin-top:1rem;
+.div p {
+    margin-top: 1rem;
 }
-
-
-
-
-
+span.uc {
+    color: #ff8b00;
+}

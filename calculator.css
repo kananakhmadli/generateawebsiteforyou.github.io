@@ -28,10 +28,16 @@ body {
 .container {
     margin: 150px auto;
     width: 60%;
+    /* background-color: red; */
 }
 .inner-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr 1fr);
+    /* display: grid;
+    grid-auto-flow: column; */
+    width: 100%;
+    /* grid-template-columns: repeat(1, 1fr 1fr); */
+    /* position: fixed; */
+    display: flex;
+    flex-direction: row;
     background-image: url(./img/pic-4.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -40,28 +46,13 @@ body {
 
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     border-radius: 15px;
 }
-
-.info h1 {
-    color: #ff8b00;
-    margin-bottom: 10px;
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    color: white;
-    font-weight: bold;
-}
-.info span {
-    font-size: 15px;
-}
-
 .cal {
+    /* width: 50%; */
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     padding: 56px;
     padding-left: 36px;
@@ -70,6 +61,27 @@ body {
     border-radius: 15px;
 
 }
+
+.info {
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.info h1 {
+    color: #ff8b00;
+    margin-bottom: 10px;
+}
+
+.info span {
+    font-size: 15px;
+}
+
+
 .gender {
     display: flex;
     flex-direction: row;
@@ -120,16 +132,28 @@ body {
     width: 100%;
 }
 
-/* @media screen and (max-width: 600px) {
-    .inner-container {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr );
-        background-image: url(./img/pic-2şjpg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+@media screen and (max-width: 900px) {
+    .inner-container{
+    flex-wrap: wrap;
+
     }
-} */
+    .cal{
+        width: 100%;
+    }
+   
+}
+@media screen and (max-width: 540px) {
+    .info{
+        background-image: none;
+        color: blue;
+    }
+    .inner-container{
+        background-image: none;
+    }
+    
+   
+}
+
 
 input[type="checkbox"],
 input[type="radio"] {
