@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
@@ -16,116 +16,87 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-  <link href="mobile.css" rel="stylesheet" media="(max-width:500px)">
-  <title>Proqramlar</title>
+  <link href="css/mobile.css" rel="stylesheet" media="(max-width:500px)">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <title>Proqramlar 2</title>
 </head>
 
 <body>
-
-  <nav class="menu">
-    <h1>Fit Ol</h1>
-    <ul>
-      <li>
-        <a href="#">Əsas səhifə</a>
-      </li>
-
-      <li data-dropdown="">
-        <a href="#">Proqramlar</a>
-
-        <div class="dropdown">
-          <ul>
-            <li>
-              <a href="#">Proqramlar 1</a>
-            </li>
-            <li data-dropdown="">
-              <a href="#">Proqramlar 2</a>
-              <div class="dropdown">
-                <ul>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="menu-icons">
+          <i class="icon ion-md-menu"></i>
+          <i class="icon ion-md-close"></i>
+        </div>
+        <a href="./index.html" class="logo">
+          <i class="icon ion-md-fitness"></i>
+        </a>
+        <ul class="nav-list">
+          <li>
+            <a href="#">Əsas səhifə</a>
+          </li>
+          <li>
+            <a href="#">Proqramlar
+              <i class="icon ion-md-arrow-dropdown"></i>
+            </a>
+            <ul class="sub-menu down">
+              <li>
+                <a href="#">Proqramlar 1</a>
+              </li>
+              <li>
+                <a href="#">Proqramlar 2
+                  <i class="icon ion-md-arrow-dropdown"></i>
+                </a>
+                <ul class="sub-menu">
                   <li>
                     <a href="#">Proqramlar 2.1</a>
                   </li>
-                  <li data-dropdown="">
+                  <li>
                     <a href="#">Proqramlar 2.2</a>
-                    <div class="dropdown">
-                      <ul>
-                        <li>
-                          <a href="#">Proqramlar 2.2.1</a>
-                        </li>
-                        <li>
-                          <a href="#">Proqramlar 2.2.2</a>
-                        </li>
-                        <li>
-                          <a href="#">Proqramlar 2.2.3</a>
-                        </li>
-                        <li>
-                          <a href="#">Proqramlar 2.2.4</a>
-                        </li>
-                      </ul>
-                    </div>
                   </li>
                   <li>
                     <a href="#">Proqramlar 2.3</a>
-                  </li>
-                  <li>
-                    <a href="#">Proqramlar 2.4</a>
+
                   </li>
                 </ul>
+              </li>
+              <li>
+                <a href="#">Proqramlar 3</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Hesablayıcılar
+              <i class="icon ion-md-arrow-dropdown"></i>
+            </a>
+            <ul class="sub-menu down">
 
-              </div>
-            </li>
-            <li>
-              <a href="#">Proqramlar 3</a>
-            </li>
-            <li>
-              <a href="#">Proqramlar 4</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li data-dropdown="">
-        <a href="#">Hesablayıcılar</a>
+              <li>
+                <a href="./calculator.html">Kalori Hesablayıcı</a>
 
-        <div class="dropdown">
-          <ul>
-            <li>
-              <a href="./calculator.html">Kalori Hesablayıcı</a>
-            </li>
-            <li>
-              <a href="#">Hesablayıcı 2</a>
-            </li>
+              </li>
+              <li>
+                <a href="#">Hesablayıcı 2</a>
+              </li>
+              <li>
+                <a href="#">Hesablayıcı 3</a>
 
-            <li>
-              <a href="#">Hesablayıcı 3</a>
-            </li>
-            <li>
-              <a href="#">Hesablayıcı 4</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li data-dropdown="">
-        <a href="#">Qidalanma</a>
+              </li>
+              <li>
+                <a href="#">Hesablayıcı 4</a>
+              </li>
+            </ul>
 
-        <div class="dropdown">
-          <ul>
-            <li>
-              <a href="#">Qidalanma 1</a>
-            </li>
-            <li>
-              <a href="#">Qidalanma 2</a>
-            </li>
-            <li>
-              <a href="#">Qidalanma 3</a>
-            </li>
-            <li>
-              <a href="#">Qidalanma 4</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-  </nav>
-
+          </li>
+          <li>
+            <a href="#">Qidalanma</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <div>
     <h1>Fitness Idman Proqramları</h1>
@@ -213,8 +184,7 @@
       başlayanlar üçün xüsusi hərəkətlərə ehtiyac yoxdur. <br> <br>Bunu siz öz istəyiniz üzrə əlavə edə bilərsiniz, amma
       bu halda siz böyük inkişaf gözləməyin. Gələcək vaxtlarda bu lazım olacaq, o vaxt biz sizə bunu tövsiyə edəcəyik.
       <br> <br>Proqramda sadəcə qarın bölgəsi üçün hərəkətlərin olmaması qarın əzələsi üçün faydasız olduğunu göstərmir.
-      Digər bütün hərəkətlərdə qarın bölgəsində inkişaf olacaq.
-    </p>
+      Digər bütün hərəkətlərdə qarın bölgəsində inkişaf olacaq.</p>
     <h2 class="iki">5x5-də yorulduğumu hiss eləmirəm.</h2>
     <p>5x5 başda çox asan proqram kimi görünə bilər. Ağırlıqlarda kiçik rəqəmlə başladığınız üçün belə düşünə
       bilərsiniz. <br><br>Fəqət irəliləyə bilmək üçün siz özünüzə uyğun yüngül çəkilərlə başlamalısınız. Fitness
@@ -227,8 +197,7 @@
     <p>5x5 bir müddət sonra çox çətin bir proqrama çevriləcək. Ağırlıqlarınız daha həftədə 2-3 dəfə artmayacaq.
       <br>Ağırlığın artırılması ilə progressive overload-ın davam etməsi üçün daha fərqli bir proqramlama lazım gələcək.
       Gücsüz tərəfləriniz özünü büruzə verəcək.<br>Məsələn, Bench pressinizi artırmaq üçün arxa qolunuzu
-      gücləndirməyiniz, Squatınızı artırmaq üçün arxanızı gücləndirməli olacaqsınız.
-    </p>
+      gücləndirməyiniz, Squatınızı artırmaq üçün arxanızı gücləndirməli olacaqsınız.</p>
     <h2 class="iki">5x5 mənim üçün çox ağırdır!</h2>
     <p>Düzgün texnikanı öyrənməmək daha ağırdır. Bəhanəyə yer yoxdur.</p>
     <h2 class="biro">3x5 proqramı</h2>
@@ -324,46 +293,46 @@
       formasına Youtubedan baxa bilərsiz.</p>
     <table id="mesq" class="son">
       <thead>
-        <tr>
-          <th>Squat</th>
-          <th>Bench Press</th>
-          <th>Row</th>
-          <th>Overhead Press</th>
-          <th>Deadlift</th>
-        </tr>
+
+        <th>Squat</th>
+        <th>Bench Press</th>
+        <th>Row</th>
+        <th>Overhead Press</th>
+        <th>Deadlift</th>
+
       </thead>
       <tbody>
         <tr>
-          <td><strong>Front Squat</strong></td>
-          <td><strong>Brus</strong> </td>
-          <td><strong>Turnik</strong></td>
-          <td><strong>Z Press</strong></td>
-          <td><strong>Leg Curl</strong></td>
+          <td data-label="Squat:"><strong>Front Squat</strong></td>
+          <td data-label="Bench Press:"><strong>Brus</strong> </td>
+          <td data-label="Row:"><strong>Turnik</strong></td>
+          <td data-label="Overhead Press:"><strong>Z Press</strong></td>
+          <td data-label="Deadlift:"><strong>Leg Curl</strong></td>
 
 
         </tr>
         <tr>
-          <td><strong>Lunge</strong> </td>
-          <td><strong>Paused Bench Press</strong></td>
-          <td><strong>T Bar Row</strong></td>
-          <td><strong>Dumbbell Lateral Raise</strong></td>
-          <td><strong>Sumo Deadlift</strong></td>
+          <td data-label="Squat:"><strong>Lunge</strong> </td>
+          <td data-label="Bench Press:"><strong>Paused Bench Press</strong></td>
+          <td data-label="Row:"><strong>T Bar Row</strong></td>
+          <td data-label="Overhead Press:"><strong>Dumbbell Lateral Raise</strong></td>
+          <td data-label="Deadlift:"><strong>Sumo Deadlift</strong></td>
 
 
         </tr>
         <tr>
-          <td><strong>Calf Raise</strong></td>
-          <td><strong>Dumbbell Chest Press</strong></td>
-          <td><strong>Power Shrug</strong></td>
-          <td><strong>Facepull</strong></td>
-          <td><strong>Romanian Deadlift</strong></td>
+          <td data-label="Squat:"><strong>Calf Raise</strong></td>
+          <td data-label="Bench Press:"><strong>Dumbbell Chest Press</strong></td>
+          <td data-label="Row:"><strong>Power Shrug</strong></td>
+          <td data-label="Overhead Press:"><strong>Facepull</strong></td>
+          <td data-label="Deadlift:"><strong>Romanian Deadlift</strong></td>
         </tr>
         <tr>
-          <td><strong>Leg Extension</strong></td>
-          <td><strong>Banded Bench Press</strong></td>
-          <td><strong>Lat Pulldown</strong></td>
-          <td><strong>Landmine Press</strong></td>
-          <td><strong>Rack Pull</strong></td>
+          <td data-label="Squat:"><strong>Leg Extension</strong></td>
+          <td data-label="Bench Press:"><strong>Banded Bench Press</strong></td>
+          <td data-label="Row:"><strong>Lat Pulldown</strong></td>
+          <td data-label="Overhead Press:"><strong>Landmine Press</strong></td>
+          <td data-label="Deadlift:"><strong>Rack Pull</strong></td>
         </tr>
 
       </tbody>
@@ -376,7 +345,257 @@
       və bir çox məsələdə bilik əldə etdiniz. Artıq demək olar bir çox idman stilinə hazırsınız, buradakı prinsipləri
       qurduğunuz üçün hər hansı bir fitness təlim proqramı sizin üçün daha təsirli olacaq.</p>
   </section>
+  <section>
+    <h2 class="biro">Calisthenics</h2>
+    <p>Kalistenika və ya kallistenika, ayaq üstə durma, tutma, itələmə və s. kimi müxtəlif hərəkətlərdən ibarət olan
+      böyük əzələ qruplarını həyata keçirən güc təliminin bir növüdür. Bu məşqlər çox vaxt bədən çəkisi hərəkətləri kimi
+      ritmik və minimal avadanlıqlarla həyata keçirilir.</p>
+    <h2 class="iki">Tarixi</h2>
+    <p>Kalistenikanın tarixi qədim dövrlərə qədər gedib çıxır. İlk dəfə yunanıstanda yaranan bu idman növü yunanıstan
+      ordularında əsgərlərin keçdiyi təlimlərin başında gəlir. Kalistenika kállos (κάλλος) gözəllik, sthenos (σθένος)
+      isə güc sözlərinin birləşməsindən yaranıb.</p>
+    <h2 class="iki">Kalistenika-hər yerdə </h2>
+    <p>Kalistenika elə bir idman növüdür ki, istər evdə istər parkda, qısacası hər yerdə etmək mümkündür. Kalistenikanın
+      digər idman növlərindən bir çox üstünlükləri var.</p>
+    <table id="mesq" class="kalis">
+      <tr>
+        <th class="cali"> Calisthenics</th>
+        <th id="bod">Bodybuilding</th>
 
+      </tr>
+      <tr>
+        <td><strong>Bədən çəkisi hərəkətləri ilə edilir </strong></td>
+        <td><strong> Müxtəlif ağırlıqlı alətlərlə edilir</strong></td>
+
+      </tr>
+      <tr>
+        <td><strong>İlk başlayanda heç bir xərc olmadan bu idmana
+            başlamaq mümkündür, bir müddət sonra kiçik
+            büdcəli bir neçə alət almaq lazım olur
+          </strong> </td>
+        <td><strong>İdman salonuna hər ay pul ödəməlisiniz
+          </strong></td>
+
+
+
+      </tr>
+      <tr>
+        <td><strong>Burada tək bir hərəkət bir neçə əzələ qrupunu
+            aktivləşdirir.
+          </strong></td>
+        <td><strong>Hər hərəkət daha az əzələ
+            qrupunu aktivləşdirir
+          </strong></td>
+
+      </tr>
+      <tr>
+        <td><strong>Eyni zamanda həm yağ əridə, həm güclənə, həm
+            də əzələ kütlənizi artıra bilərsiniz
+          </strong></td>
+        <td><strong>
+
+            Hər üçünü eyni zamanda etmək daha çətindir
+          </strong></td>
+
+      </tr>
+
+    </table>
+
+
+    <p>Bununla siz calisthenics-in idman salonunda etdiyiniz idmandan necə fərqləndiyini gördünüz. Bizim sizlərə təqdim
+      edəcəyimiz idman proqramında istər başlanğıc səviyyəsində olan, istərsə də müəyyən təcrübəyə malik olan biri
+      istifadə edə bilər. Bu proqramda biz sizə bir aya gözəl bədənə sahib olmağı göstərmirik, çünki bu bir çox insan
+      tərəfindən asan görünən amma eyni vaxtda çox zəhmət tələb edən proqramdır. Bir halda ki, bu proqrama başlamaq
+      istəyənlər bir neçə ay istiqrarlı bir formada, əksiksiz və günləri ötürmədən idmanlarına davam edəcəksiniz, siz
+      həm güc toplayacaqsınız, həm bədəninizdə fərqlər olacaq. Çəkisi çox olan insanlara bəzən sən arıqla, sonra idmana
+      başlayarsan deyib onları motivasiyadan salırlar, calisthenics isə hər kəs üçün uyğundur. Calisthenics elə bir
+      idman növüdür ki, burada hərəkətlərin limiti yoxdur. Zaman keçdikcə bədənin duruşundan asılı olaraq hərəkətlərin
+      çətinliyi artır. Məsələn jim hərəkətini götürək.</p>
+    <div>
+      <img id="jim" src="./img/jim.jpeg" alt="Jim tipləri">
+      <p id="sekil">Gördüyünüz kimi hereketlerin sayı ucsuz bucaqsızdır. Siz calisthenicsle tekce istediyiniz görünüşe
+        sahib olmayacaqsınız, eyni vaxtda fit güclü ve çox aktiv bedene sahib olacaqsınız. Eger calisthenics proqramına
+        başlamaq istəyirsinizsə ilk başda jim vurmağı bacarmaq lazımdır. Ən azı 15 jim vurandan sonra daha mürəkkəb
+        hərəkətlərə keçə bilərsiniz. Bizim orta səviyyə olanlar üçün olan calisthenics proqramımızdan faydalana
+        bilərsiniz. İlk bir ayda fərqi hiss edəcəyinizin qarantiyasını veririk. <br> <br> <br> <br> <br> <br> <br> <br>
+        <br></p>
+
+    </div>
+    <h2 class="iki" id="hcali">Calisthenics idman proqramı sxemi:</h2>
+    <table id="mesq" class="ilka">
+
+      <thead>
+        <th>Birinci gün (Full Body)</th>
+        <th>İkinci gün (Kardio)</th>
+        <th>Üçüncü gün (Upper body)</th>
+        <th>Dördüncü gün (Abs)</th>
+        <th>Beşinci gün (Lower body)</th>
+        <th>Altıncı gün (Kardio)</th>
+        <th>Bazar günü (İstirahət)</th>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td data-label="Birinci gün (Full Body)"><strong>Burpees</strong></td>
+          <td data-label="İkinci gün (Kardio)"><strong>Özünüz seçin</strong></td>
+          <td data-label="Üçüncü gün (Upper body)"><strong>Hand Walks</strong></td>
+          <td data-label="Dördüncü gün (Abs)"><strong>Bicycles</strong></td>
+          <td data-label="Beşinci gün (Lower body)"><strong>Side Hops</strong></td>
+          <td data-label="Altıncı gün (Kardio)"><strong>Özünüz seçin</strong></td>
+          <td data-label="Bazar günü (İstirahət)"><strong>Dincəl</strong></td>
+        </tr>
+        <tr>
+          <td data-label="Birinci gün (Full Body)"><strong>Low Plank to High Plank</strong></td>
+          <td data-label="İkinci gün (Kardio)"><strong>Özünüz seçin</strong></td>
+          <td data-label="Üçüncü gün (Upper body)"><strong>Low Plank to High Plank</strong></td>
+          <td data-label="Dördüncü gün (Abs)"><strong>Side Plank Up & Down</strong></td>
+          <td data-label="Beşinci gün (Lower body)"><strong>Single Leg Hamstring Bridge</strong></td>
+          <td data-label="Altıncı gün (Kardio)"><strong>Özünüz seçin</strong></td>
+          <td data-label="Bazar günü (İstirahət)"><strong>Dincəl</strong></td>
+
+
+        </tr>
+        <tr>
+          <td data-label="Birinci gün (Full Body)"><strong>In and Outs</strong></td>
+          <td data-label="İkinci gün (Kardio)"><strong>Özünüz seçin</strong></td>
+          <td data-label="Üçüncü gün (Upper body)"><strong>Butterflies</strong></td>
+          <td data-label="Dördüncü gün (Abs)"><strong>Plank Side to Side</strong></td>
+          <td data-label="Beşinci gün (Lower body)"><strong>Squats</strong></td>
+          <td data-label="Altıncı gün (Kardio)"><strong>Özünüz seçin</strong></td>
+          <td data-label="Bazar günü (İstirahət)"><strong>Dincəl</strong></td>
+        </tr>
+        <tr>
+          <td data-label="Birinci gün (Full Body)"><strong>Plank Side Hold</strong></td>
+          <td data-label="İkinci gün (Kardio)"><strong>Özünüz seçin</strong></td>
+          <td data-label="Üçüncü gün (Upper body)"><strong>Jumping Jacks</strong></td>
+          <td data-label="Dördüncü gün (Abs)"><strong>Seated In and Outs</strong></td>
+          <td data-label="Beşinci gün (Lower body)"><strong>Single Leg Calf Raises</strong></td>
+          <td data-label="Altıncı gün (Kardio)"><strong>Özünüz seçin</strong></td>
+          <td data-label="Bazar günü (İstirahət)"><strong>Dincəl</strong></td>
+        </tr>
+        <tr>
+          <td data-label="Birinci gün (Full Body)"><strong>Squats</strong></td>
+          <td data-label="İkinci gün (Kardio)"><strong>Özünüz seçin</strong></td>
+          <td data-label="Üçüncü gün (Upper body)"><strong>Decline Push Up</strong></td>
+          <td data-label="Dördüncü gün (Abs)"><strong>Switching Mountain Climbers</strong></td>
+          <td data-label="Beşinci gün (Lower body)"><strong>Switching Lunges</strong></td>
+          <td data-label="Altıncı gün (Kardio)"><strong>Özünüz seçin</strong></td>
+          <td data-label="Bazar günü (İstirahət)"><strong>Dincəl</strong></td>
+        </tr>
+        <tr>
+          <td data-label="Birinci gün (Full Body)"><strong>Jackknife</strong></td>
+          <td data-label="İkinci gün (Kardio)"><strong>Özünüz seçin</strong></td>
+          <td data-label="Üçüncü gün (Upper body)"><strong>Shoulder Taps</strong></td>
+          <td data-label="Dördüncü gün (Abs)"><strong>Russian Twists</strong></td>
+          <td data-label="Beşinci gün (Lower body)"><strong>Wall Sit</strong></td>
+          <td data-label="Altıncı gün (Kardio)"><strong>Özünüz seçin</strong></td>
+          <td data-label="Bazar günü (İstirahət)"><strong>Dincəl</strong></td>
+        </tr>
+        <tr>
+          <td data-label="Birinci gün (Full Body)"><strong>Pike Push Ups</strong></td>
+          <td data-label="İkinci gün (Kardio)"><strong>Özünüz seçin</strong></td>
+          <td data-label="Üçüncü gün (Upper body)"><strong>Pike Push Ups</strong></td>
+          <td data-label="Dördüncü gün (Abs)"><strong>Plank Hold</strong></td>
+          <td data-label="Beşinci gün (Lower body)"><strong>Bulgarian Split Squat</strong></td>
+          <td data-label="Altıncı gün (Kardio)"><strong>Özünüz seçin</strong></td>
+          <td data-label="Bazar günü (İstirahət)"><strong>Dincəl</strong></td>
+        </tr>
+      </tbody>
+
+    </table>
+
+    <div id="gorun">
+
+      <h2 class="iki">Birinci gün (Full Body):</h2>
+      <ul>
+        <li class="ul"><span>Burpees</span></li>
+        <li class="ul"><span>Low Plank to High Plank</span></li>
+        <li class="ul"><span>In and Outs</span></li>
+        <li class="ul"><span>Plank Side Hold</span></li>
+        <li class="ul"><span>Squats</span></li>
+        <li class="ul"><span>Jackknife</span></li>
+        <li class="ul"><span>Pike Push Ups</span></li>
+
+      </ul>
+
+      <h2 class="iki">Ikinci gün (Kardio):</h2>
+      <ul>
+        <li class="ul"><span>Özünüz seçin</span></li>
+
+
+      </ul>
+
+      <h2 class="iki">Üçüncü gün (Upper body):</h2>
+      <ul>
+        <li class="ul"><span>Hand Walks</span></li>
+        <li class="ul"><span>Low Plank to High Plank</span></li>
+        <li class="ul"><span>Butterflies</span></li>
+        <li class="ul"><span>Jumping Jacks</span></li>
+        <li class="ul"><span>Decline Push Up</span></li>
+        <li class="ul"><span>Shoulder Taps</span></li>
+        <li class="ul"><span>Pike Push Ups</span></li>
+
+      </ul>
+      <h2 class="iki">Dördüncü gün (Abs):</h2>
+      <ul>
+        <li class="ul"><span>Bicycles</span></li>
+        <li class="ul"><span>Side Plank Up & Down</span></li>
+        <li class="ul"><span>Plank Side to Side</span></li>
+        <li class="ul"><span>Seated In and Outs</span></li>
+        <li class="ul"><span>Switching Mountain Climbers</span></li>
+        <li class="ul"><span>Russian Twists</span></li>
+        <li class="ul"><span>Plank Hold</span></li>
+
+      </ul>
+      <h2 class="iki">Beşinci gün (Lower body):</h2>
+      <ul>
+        <li class="ul"><span>Side Hops</span></li>
+        <li class="ul"><span>Single Leg Hamstring Bridge</span></li>
+        <li class="ul"><span>Squats</span></li>
+        <li class="ul"><span>Single Leg Calf Raises</span></li>
+        <li class="ul"><span>Switching Lunges</span></li>
+        <li class="ul"><span>Wall Sit</span></li>
+        <li class="ul"><span>Bulgarian Split Squat</span></li>
+
+      </ul>
+      <h2 class="iki">Altıncı gün (Kardio):</h2>
+      <ul>
+        <li class="ul"><span>Özünüz seçin</span></li>
+
+
+      </ul>
+      <h2 class="iki">Bazar günü (İstirahət):</h2>
+      <ul>
+        <li class="ul"><span>Dincəl</span></li>
+
+
+      </ul>
+
+
+    </div>
+    <h2 class="iki">Calisthenics Proqrami Izahat</h2>
+    <ul>
+      <li class="ul"><span>Ümumiyyətlə burda təkrar sayı ilə işləməyəcik.</span></li>
+      <li class="ul"><span>Burda hər gün üçün 7 hərəkət var, bu hərəkətləri 2 qrupa böləcik(Məsələn ilk 4 hərəkət ve son
+          3 hərəkət kimi bölə bilərsiniz). </span></li>
+      <li class="ul"><span>Əgər idmanda müəyyən qədər təcrübəniz varsa,yəni dayanıqlığınız və atletik qabiliyyətiniz
+          buna imkan veririsə, hər hərəkəti 40 saniyə edib, 20 saniyə dincəlin.</span></li>
+      <li class="ul"><span>Yox, idmana yeni başlayacaqsınızsa və ya çox az təcrübəniz varsa hərəkətləri 25-30 saniyə
+          edib,30-35 saniyə dincəlin.</span></li>
+      <li class="ul"><span>Bayaq 2 qrupa böldüyümüz hərəkətləri 2 raund şəklində adlandıraq və bu iki raund arası
+          dincəlmə müddəti 2 dəqiqədir. Yəni 4 hərəkəti edirsiz və 2 dəqiqə dincəlirsiz, daha sonra növbəti 3 hərəkəti
+          edirsiz və onu da bitirdikdə 2 dəqiqə istirahət edirsiz.Beləcə periodik şəkildə davam edirsiz.</span></li>
+      <li class="ul"><span>Çalışın 3-5 set arası edəsiz bu raundları.(Raund 1 + 2 dəqiqə + Raund 2 + 2 dəqiqə) bir set
+          sayılır.</span></li>
+      <li class="ul"><span>Əvvəlcə da yazdığımız kimi atletik qabiliyyətinizdən asılı olaraq dincəlmə müddətini artıra
+          və setləri azalda bilərsiz.Ama bunu cox edərək tənbəllik etməyə çalışmayın.</span></li>
+
+    </ul>
+
+
+    <script src="./js/scripts.js"></script>
+
+  </section>
 </body>
 
 </html>
